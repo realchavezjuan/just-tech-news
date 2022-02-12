@@ -29,8 +29,8 @@ router.get('/', (req, res) => {
             attributes: ['username']
           }
         ]
-    });
-  
+        
+  }).then(data => res.json(data));
 });
 
 router.get('/:id', (req, res) => {
